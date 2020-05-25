@@ -103,11 +103,33 @@
       </section>
 
       <section class="search-hotel">
-        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <h2 class="visually-hidden">Подобор отеля в Седоне</h2>
         <b class="search-hotel__title">Заинтересовались?</b>
         <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="button" type="button" id="search-hotel-show-button">Поиск гостиницы в седоне</button>
-        <!-- Тут будет форма -->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="search-form-arrival-date">Дата заезда:</label>
+            <input id="search-form-arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
+          </p>
+          <p>
+            <label for="search-form-departure-date">Дата выезда:</label>
+            <input id="search-form-departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
+          </p>
+          <p>
+            <label for="search-form-adults">Взрослые:</label>
+            <button class="search-form__button" type="button"><span class="visually-hidden">Добавить</span></button>
+            <input id="search-form-adults" type="text" name="adults" value="2">
+            <button class="search-form__button" type="button"><span class="visually-hidden">Отнять</span></button>
+          </p>
+          <p>
+            <label for="search-form-children">Дети:</label>
+            <button class="search-form__button" type="button"><span class="visually-hidden">Добавить</span></button>
+            <input id="search-form-children" type="text" name="children" value="0">
+            <button class="search-form__button" type="button"><span class="visually-hidden">Отнять</span></button>
+          </p>
+          <button class="button" type="submit">Найти</button>
+        </form>
       </section>
 
       <section class="contacts">
