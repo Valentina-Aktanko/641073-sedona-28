@@ -31,33 +31,85 @@
   <main>
     <h1 class="visually-hidden">Подбор отеля по параметрам</h1>
 
-    <section class="filter">
-      <h2 class="visually-hidden">Фильтр отелей</h2>
-      <!-- Здесь будет форма фильтра -->
-
-    </section>
-
-    <section class="sorting">
-      <h2 class="visually-hidden">Сортировка отелей</h2>
-      <p class="sorting__found">Найдено: <span id="quantity-found">3</span></p>
-      <p class="sorting__type">
-        Сортировка:
-        <button class="sorting__button sorting__button--active">По цене</button>
-        <button class="sorting__button">По типу</button>
-        <button class="sorting__button">По рейтингу</button>
-      </p>
-      <p class="sorting__order">
-        <button class="sorting__button sorting__button--asc">
-          <span class="visually-hidden">По возрастанию</span>
-        </button>
-        <button class="sorting__button sorting__button--desc sorting__button--active">
-          <span class="visually-hidden">По убыванию</span>
-        </button>
-      </p>
-    </section>
-
     <section class="hotels">
       <h2 class="visually-hidden">Список отелей</h2>
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="filter-form-pool" checked>
+              <label for="filter-form-pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="filter-form-parking">
+              <label for="filter-form-parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="internet" id="filter-form-internet">
+              <label for="filter-form-internet">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="filter-form-hotel" checked>
+              <label for="filter-form-hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="filter-form-motel" checked>
+              <label for="filter-form-motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartments" id="filter-form-apartments" checked>
+              <label for="filter-form-apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="double-range">
+          <div class="double-range__price-controls">
+            <span class="double-range__title">Стоимость в сутки (Р):</span>
+            <label class="visually-hidden" for="double-range-min-price">Минимальная цена</label>
+            <div class="double-range__input-wrapper double-range__input-wrapper_min">
+              <input class="double-range__input" type="text" name="min-price" value="0" id="double-range-min-price" readonly>
+            </div>
+            <label class="visually-hidden" for="double-range-max-price">Максимальная цена</label>
+            <div class="double-range__input-wrapper">
+              <input class="double-range__input" type="text" name="max-price" value="3000" id="double-range-max-price" readonly>
+            </div>
+          </div>
+          <div class="double-range__controls">
+            <div class="double-range__scale">
+              <div class="double-range__bar"></div>
+            </div>
+            <div class="double-range__toggle double-range__toggle_min"></div>
+            <div class="double-range__toggle double-range__toggle_max"></div>
+          </div>
+        </div>
+        <button class="button" type="submit">Показать</button>
+      </form>
+
+      <div class="sorting">
+        <h2 class="visually-hidden">Сортировка отелей</h2>
+        <p class="sorting__found">Найдено: <span id="quantity-found">3</span></p>
+        <p class="sorting__type">
+          Сортировка:
+          <button class="sorting__button sorting__button--active">По цене</button>
+          <button class="sorting__button">По типу</button>
+          <button class="sorting__button">По рейтингу</button>
+        </p>
+        <p class="sorting__order">
+          <button class="sorting__button sorting__button--asc">
+            <span class="visually-hidden">По возрастанию</span>
+          </button>
+          <button class="sorting__button sorting__button--desc sorting__button--active">
+            <span class="visually-hidden">По убыванию</span>
+          </button>
+        </p>
+      </div>
+
       <ul class="hotels__list">
         <li class="hotels__item">
           <p class="hotels__picture">
