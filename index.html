@@ -45,8 +45,10 @@
 
     <section class="features">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <p class="features__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <div class="feature__text-wrapper">
+        <p class="features__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
       <ul class="features__list">
         <li class="features__item features__item--one">
           <div class="feature__content">
@@ -110,34 +112,35 @@
       </ul>
     </section>
 
-    <section class="search-hotel">
+    <section class="search">
       <h2 class="visually-hidden">Подобор отеля в Седоне</h2>
-      <b class="search-hotel__title">Заинтересовались?</b>
-      <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
-        седоне</p>
-      <button class="button" type="button" id="search-hotel-show-button">Поиск гостиницы в седоне</button>
+      <div class="search__text-wrapper">
+        <p class="search__slogan">Заинтересовались?</p>
+        <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+      </div>
+      <button class="button button--dark search__button search__button--show" type="button" id="show-button">Поиск гостиницы в седоне</button>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label for="search-form-arrival-date">Дата заезда:</label>
-          <input id="search-form-arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
+          <label class="search-form__label" for="search-form-arrival-date">Дата заезда:</label>
+          <input class="search-form__input search-form__input--date" id="search-form-arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
         </p>
         <p>
-          <label for="search-form-departure-date">Дата выезда:</label>
-          <input id="search-form-departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
+          <label class="search-form__label" for="search-form-departure-date">Дата выезда:</label>
+          <input class="search-form__input search-form__input--date" id="search-form-departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
         </p>
         <p>
-          <label for="search-form-adults">Взрослые:</label>
-          <button class="search-form__button" type="button"><span class="visually-hidden">Добавить</span></button>
-          <input id="search-form-adults" type="text" name="adults" value="2">
-          <button class="search-form__button" type="button"><span class="visually-hidden">Отнять</span></button>
+          <label class="search-form__label" for="search-form-adults">Взрослые:</label>
+          <button class="search-form__input search-form__controll" type="button"><span class="visually-hidden">Добавить</span></button>
+          <input class="search-form__input" id="search-form-adults" type="number" name="adults" value="2">
+          <button class="search-form__input search-form__control" type="button"><span class="visually-hidden">Отнять</span></button>
         </p>
         <p>
-          <label for="search-form-children">Дети:</label>
-          <button class="search-form__button" type="button"><span class="visually-hidden">Добавить</span></button>
-          <input id="search-form-children" type="text" name="children" value="0">
-          <button class="search-form__button" type="button"><span class="visually-hidden">Отнять</span></button>
+          <label class="search-form__label" for="search-form-children">Дети:</label>
+          <button class="search-form__input search-form__control" type="button"><span class="visually-hidden">Добавить</span></button>
+          <input  class="search-form__input" id="search-form-children" type="number" name="children" value="0">
+          <button class="search-form__input search-form__control" type="button"><span class="visually-hidden">Отнять</span></button>
         </p>
-        <button class="button" type="submit">Найти</button>
+        <button class="button button--light search__button search__button--find" type="submit">Найти</button>
       </form>
     </section>
 

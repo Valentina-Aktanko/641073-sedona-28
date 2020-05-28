@@ -5,6 +5,7 @@
   --basic-extra-dark: #333333;
   --basic-accent: #81B3D2;
   --basic-neutral: #EEEEEE;
+  --basic-light: #EBEBEB;
   --basic-extra-light: #F2F2F2;
   --basic-white: #ffffff;
 
@@ -19,7 +20,7 @@ body {
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -48,9 +49,31 @@ img {
   overflow: hidden;
 }
 
+/* Button */
+
+.button {
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-accent);
+  border: none;
+}
+
+.button--light {
+  background-color: var(--basic-accent);
+}
+
+.button--dark {
+  background-color: var(--special);
+}
+
 /* Main navigation */
 
 .main-navigation {
+  line-height: 26px;
   font-weight: 700;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -78,6 +101,8 @@ img {
   opacity: 0.3;
 }
 
+/* Welcome */
+
 .welcome {
   text-align: center;
   background-color: var(--basic-extra-dark);
@@ -86,17 +111,90 @@ img {
   background-repeat: no-repeat;
 }
 
+/* Features */
+
 .features {
   background-color: var(--basic-white);
+}
+
+.feature__text-wrapper {
+  line-height: 26px;
+  text-align: center;
 }
 
 .features__slogan {
   font-size: 21px;
   font-weight: 700;
-  text-align: center;
 }
 
 .features__text {
   color: var(--basic-extra-dark);
+}
+
+/* Search */
+
+.search {
+  background-color: var(--basic-white);
+}
+
+.search__text-wrapper {
+  line-height: 24px;
   text-align: center;
+}
+
+.search__slogan {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.search__text {
+  color: var(--basic-extra-dark);
+}
+
+.search__button {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+/* Search Form */
+
+.search-form {
+  background-color: var(--basic-white);
+}
+
+.search-form ::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+
+.search-form ::-moz-placeholder          {
+  text-transform: uppercase;
+}
+
+.search-form :-moz-placeholder           {
+  text-transform: uppercase;
+}
+
+.search-form :-ms-input-placeholder      {
+  text-transform: uppercase;
+}
+
+.search-form__label,
+.search-form__input {
+  line-height: 26px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.search-form__input {
+  text-transform: uppercase;
+  background-color: var(--basic-extra-light);
+}
+
+
+.search-form__input:hover {
+  background-color: var(--basic-light);
+}
+
+.search-form__input:focus {
+  background-color: var(--basic-white);
 }
