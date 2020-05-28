@@ -200,6 +200,28 @@ img {
   background-color: var(--basic-white);
 }
 
+/* Hotels list */
+
+.hotels__list {
+  list-style: none;
+  background-color: var(--basic-white);
+}
+
+.hotels__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.hotels__text {
+  color: var(--basic-extra-dark);
+}
+
+.hotels__rating-text {
+  color: #666666;
+  background-color: var(--basic-extra-light);
+}
+
 /* Footer contacts */
 
 .page-footer {
