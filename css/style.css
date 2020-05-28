@@ -65,4 +65,11 @@ img {
   opacity: 0.3;
 }
 
+.welcome {
+  text-align: center;
+  background-color: var(--basic-extra-dark);
+  background-image: url(../img/bg-mountains.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 
