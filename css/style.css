@@ -86,3 +86,17 @@ img {
   background-repeat: no-repeat;
 }
 
+.features {
+  background-color: var(--basic-white);
+}
+
+.features__slogan {
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.features__text {
+  color: var(--basic-extra-dark);
+  text-align: center;
+}
