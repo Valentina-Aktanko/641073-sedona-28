@@ -3,6 +3,8 @@
 :root {
   --basic-black: #000000;
   --basic-extra-dark: #333333;
+  --basic-accent-dark: #5496BD;
+  --basic-accent-middle: #669EC0;
   --basic-accent: #81B3D2;
   --basic-neutral: #EEEEEE;
   --basic-light: #EBEBEB;
@@ -156,7 +158,7 @@ img {
   line-height: 26px;
 }
 
-/* Search Form */
+/* Search form */
 
 .search-form {
   background-color: var(--basic-white);
@@ -190,11 +192,57 @@ img {
   background-color: var(--basic-extra-light);
 }
 
-
 .search-form__input:hover {
   background-color: var(--basic-light);
 }
 
 .search-form__input:focus {
   background-color: var(--basic-white);
+}
+
+/* Footer contacts */
+
+.page-footer {
+  background-color: var(--basic-white);
+}
+
+.contacts__text {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+/* Footer social */
+
+.social__list {
+  list-style: none;
+}
+
+.social__link {
+  text-align: center;
+  background-color: var(--basic-accent);
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: var(--basic-accent-middle);
+}
+
+.social__link:active {
+  background-color: var(--basic-accent-dark);
+}
+
+/* Footer copyright */
+.copyright__text {
+  line-height: 26px;
+}
+
+.copyright__logo-link:hover path,
+.copyright__logo-link:focus path {
+  fill: var(--basic-accent);
+}
+
+.copyright__logo-link:active path {
+  fill: #BDBBBC;
 }
