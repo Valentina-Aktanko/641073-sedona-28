@@ -34,3 +34,35 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Main navigation */
+
+.main-navigation {
+  font-weight: 700;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-list__item a {
+  color: var(--basic-black);
+}
+
+.menu-list__item--current a:not([href]) {
+  color: var(--special);
+}
+
+.menu-list__item a:hover,
+.menu-list__item a:focus {
+  color: var(--basic-accent);
+}
+
+.menu-list__item a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+
