@@ -25,3 +25,12 @@ body {
   text-transform: uppercase;
   background-color: var(--basic-extra-light);
 }
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
