@@ -116,10 +116,6 @@ img {
   color: var(--basic-black);
 }
 
-.menu-list__item--current a:not([href]) {
-  color: var(--special);
-}
-
 .menu-list__item a:hover,
 .menu-list__item a:focus {
   color: var(--basic-accent);
@@ -127,6 +123,10 @@ img {
 
 .menu-list__item a:active {
   color: var(--basic-black-03);
+}
+
+.menu-list__item--current a:not([href]) {
+  color: var(--special);
 }
 
 /* Welcome */
