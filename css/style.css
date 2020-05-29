@@ -2,6 +2,7 @@
 
 :root {
   --basic-black: #000000;
+  --basic-black-03: rgba(0, 0, 0, 0.3);
   --basic-extra-dark: #333333;
   --basic-accent-dark: #5496BD;
   --basic-accent-middle: #669EC0;
@@ -10,8 +11,11 @@
   --basic-light: #EBEBEB;
   --basic-extra-light: #F2F2F2;
   --basic-white: #ffffff;
+  --basic-white-03: rgba(255, 255, 255, 0.3);
 
   --special: #766357;
+  --special-middle: #604E43;
+  --special-dark: #503E33;
 }
 
 /* Global */
@@ -64,12 +68,34 @@ img {
   border: none;
 }
 
+.button:active {
+  color: var(--basic-white-03);
+}
+
 .button--light {
   background-color: var(--basic-accent);
 }
 
+.button--light:hover,
+.button--light:focus {
+  background-color: var(--basic-accent-middle);
+}
+
+.button--light:active {
+  background-color: var(--basic-accent-dark);
+}
+
 .button--dark {
   background-color: var(--special);
+}
+
+.button--dark:hover,
+.button--dark:focus {
+  background-color: var(--special-middle);
+}
+
+.button--dark:active {
+  background-color: var(--special-dark);
 }
 
 /* Main navigation */
@@ -99,8 +125,7 @@ img {
 }
 
 .menu-list__item a:active {
-  color: var(--basic-black);
-  opacity: 0.3;
+  color: var(--basic-black-03);
 }
 
 /* Welcome */
