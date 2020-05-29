@@ -178,11 +178,22 @@ img {
 /* Welcome */
 
 .welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 509px;
+  
   text-align: center;
   background-color: var(--basic-extra-dark);
   background-image: url(../img/bg-mountains.jpg);
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.welcome__picture {
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /* Features */
