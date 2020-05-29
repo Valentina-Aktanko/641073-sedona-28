@@ -268,10 +268,20 @@ img {
   background-color: var(--basic-white);
 }
 
-.hotels__title {
+.hotels__link {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  color: var(--basic-black);
+}
+
+.hotels__link:hover,
+.hotels__link:focus {
+  color: var(--basic-accent);
+}
+
+.hotels__link:active {
+  color: var(--basic-black-03);
 }
 
 .hotels__text {
