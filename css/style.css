@@ -300,20 +300,6 @@ img {
   list-style: none;
 }
 
-.social__link {
-  text-align: center;
-  background-color: var(--basic-accent);
-}
-
-.social__link:hover,
-.social__link:focus {
-  background-color: var(--basic-accent-middle);
-}
-
-.social__link:active {
-  background-color: var(--basic-accent-dark);
-}
-
 /* Footer copyright */
 .copyright__text {
   line-height: 26px;
