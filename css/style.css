@@ -133,6 +133,40 @@ img {
   color: var(--basic-extra-dark);
 }
 
+.features__text--accent {
+  color: var(--basic-white);
+}
+
+.features__list {
+  list-style: none;
+}
+
+.features__item {
+  color: var(--basic-extra-dark);
+  background-color: var(--basic-neutral);
+}
+
+.features__item--additionally,
+.features__item--sub {
+  background-color: var(--basic-white);
+}
+
+.feature__text-content {
+  color: var(--basic-white);
+  background-color: var(--basic-accent);
+}
+
+.featires__title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.featires__title--accent {
+  color: var(--basic-white);
+}
+
 /* Search */
 
 .search {
