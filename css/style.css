@@ -252,6 +252,7 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   background-color: var(--basic-extra-light);
+  border: none;
 }
 
 .search-form__input:hover {
@@ -260,6 +261,12 @@ img {
 
 .search-form__input:focus {
   background-color: var(--basic-white);
+}
+
+.search-form__input--date {
+  background-image: url(../img/calendar.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
 }
 
 /* Hotels form */
