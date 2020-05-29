@@ -4,6 +4,8 @@
   --basic-black: #000000;
   --basic-black-03: rgba(0, 0, 0, 0.3);
   --basic-extra-dark: #333333;
+  --basic-gray: #666666;
+  --basic-light-gray: #BDBBBC;
   --basic-accent-dark: #5496BD;
   --basic-accent-middle: #669EC0;
   --basic-accent: #81B3D2;
@@ -277,7 +279,7 @@ img {
 }
 
 .hotels__rating-text {
-  color: #666666;
+  color: var(--basic-gray);
   background-color: var(--basic-extra-light);
 }
 
@@ -311,5 +313,5 @@ img {
 }
 
 .copyright__logo-link:active path {
-  fill: #BDBBBC;
+  fill: var(--basic-light-gray);
 }
