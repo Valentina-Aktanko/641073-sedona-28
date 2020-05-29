@@ -98,23 +98,32 @@
         <button class="button filter-form__button" type="submit">Показать</button>
       </form>
 
-      <div class="sorting">
+      <div class="hotels__sorting sorting">
         <h2 class="visually-hidden">Сортировка отелей</h2>
-        <p class="sorting__found">Найдено: <span id="quantity-found">3</span></p>
-        <p class="sorting__type">
-          Сортировка:
-          <button class="sorting__button sorting__button--active">По цене</button>
-          <button class="sorting__button">По типу</button>
-          <button class="sorting__button">По рейтингу</button>
-        </p>
-        <p class="sorting__order">
-          <button class="sorting__button sorting__button--asc">
-            <span class="visually-hidden">По возрастанию</span>
-          </button>
-          <button class="sorting__button sorting__button--desc sorting__button--active">
-            <span class="visually-hidden">По убыванию</span>
-          </button>
-        </p>
+        <p class="sorting__found">Найдено: <span id="sorting-found-quantity">3</span></p>
+        <fieldset>
+          <legend class="sorting__title">Сортировка:</legend>
+          <p>
+            <input class="sorting__input" type="radio" name="sorting" value="price" id="sort-by-price" checked>
+            <label class="sorting__label" for="sort-by-price">По цене</label>
+          </p>
+          <p>
+            <input class="sorting__input" type="radio" name="sorting" value="type" id="sort-by-type">
+            <label class="sorting__label" for="sort-by-type">По типу</label>
+          </p>
+          <p>
+            <input class="sorting__input" type="radio" name="sorting" value="rating" id="sort-by-rating">
+            <label class="sorting__label" for="sort-by-rating">По рейтингу</label>
+          </p>
+          <p class="sorting__order">
+            <button class="sorting__button sorting__button--asc">
+              <span class="visually-hidden">По возрастанию</span>
+            </button>
+            <button class="sorting__button sorting__button--desc sorting__button--active">
+              <span class="visually-hidden">По убыванию</span>
+            </button>
+          </p>
+        </fieldset>
       </div>
 
       <ul class="hotels__list">

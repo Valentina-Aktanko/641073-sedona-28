@@ -264,6 +264,7 @@ img {
 .search-form__input:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--basic-light-2);
+  border-color: var(--basic-light-2);
 }
 
 .search-form__input:hover ~ svg > path {
@@ -323,7 +324,30 @@ img {
   background-color: var(--basic-white);
 }
 
+/* Hotels sorting */
 
+.sorting {
+  font-size: 12px;
+  font-weight: 18px;
+  background-color: var(--basic-white);
+  border-bottom: 1px solid var(--basic-light-2);
+}
+
+.sorting__found {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sorting__label {
+  color: var(--basic-black-03);
+  border-bottom: 1px dotted var(--basic-accent);
+}
+
+.sorting__input:checked ~ .sorting__label {
+  color: var(--basic-accent);
+  border-bottom: none;
+}
 
 /* Hotels list */
 
