@@ -281,7 +281,7 @@ img {
 
 .search-form {
   position: absolute;
-  left: 351px;
+  left: calc(50% - 229px);
   display: flex;
   flex-direction: column;
   width: 458px;
@@ -442,7 +442,10 @@ img {
 /* Footer contacts */
 
 .page-footer {
-  /* background-color: var(--basic-white); */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 36px;
+  padding: 0 73px;
 }
 
 .contacts__text {
