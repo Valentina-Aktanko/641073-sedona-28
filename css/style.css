@@ -231,11 +231,6 @@ img {
   background-color: var(--basic-neutral);
 }
 
-.features__item--additionally,
-.features__item--sub {
-  /* background-color: var(--basic-white); */
-}
-
 .feature__text-content {
   color: var(--basic-white);
   background-color: var(--basic-accent);
@@ -255,10 +250,13 @@ img {
 /* Search */
 
 .search {
-  /* background-color: var(--basic-white); */
+  position: relative;
 }
 
 .search__text-wrapper {
+  max-width: 435px;
+  margin: 0 auto;
+
   line-height: 24px;
   text-align: center;
 }
@@ -273,6 +271,8 @@ img {
 }
 
 .search__button {
+  display: block;
+  margin: 0 auto;
   font-size: 21px;
   line-height: 26px;
 }
@@ -280,23 +280,18 @@ img {
 /* Search form */
 
 .search-form {
-  /* background-color: var(--basic-white); */
+  position: absolute;
+  left: 351px;
+  display: flex;
+  flex-direction: column;
+  width: 458px;
+  margin: 0 auto;
+  padding: 55px;
+  background-color: var(--basic-white);
 }
 
-.search-form ::-webkit-input-placeholder {
-  text-transform: uppercase;
-}
-
-.search-form ::-moz-placeholder          {
-  text-transform: uppercase;
-}
-
-.search-form :-moz-placeholder           {
-  text-transform: uppercase;
-}
-
-.search-form :-ms-input-placeholder      {
-  text-transform: uppercase;
+.search-form__item-wrapper {
+  display: flex;
 }
 
 .search-form__label {
@@ -330,6 +325,12 @@ img {
 
 .search-form__input:focus ~ svg > path {
   fill: var(--basic-accent);
+}
+
+.search-form__button {
+  align-self: stretch;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 /* Hotels filter */
