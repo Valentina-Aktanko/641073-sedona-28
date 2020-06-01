@@ -369,12 +369,20 @@ img {
 /* Hotels filter */
 
 .filter-form {
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px 73px;
+
   color: var(--basic-white);
   background-color: var(--basic-accent-dark);
   background-image: url(../img/bg-mountains-sm.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: contain;
+}
+
+.filter-form__fieldset {
+  width: 200px; /* временно для сетки */
+  margin-right: 50px;
 }
 
 .filter-form__legend {
@@ -387,7 +395,12 @@ img {
   list-style: none;
 }
 
+.double-range {
+  margin-left: auto;
+}
+
 .double-range__input {
+
   font: inherit;
   text-transform: uppercase;
   color: var(--basic-white);
