@@ -88,25 +88,23 @@ img {
   font-weight: 700;
   text-align: center;
   color: var(--basic-white);
+  background-color: var(--basic-accent);
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 .button:active {
   color: var(--basic-white-03);
 }
 
-.button--light {
-  background-color: var(--basic-accent);
-}
-
-.button--light:hover,
-.button--light:focus {
+.button:hover,
+.button:focus {
   background-color: var(--basic-accent-middle);
 }
 
-.button--light:active {
+.button:active {
   background-color: var(--basic-accent-dark);
 }
 
@@ -431,26 +429,68 @@ img {
 /* Hotels sorting */
 
 .sorting {
-  font-size: 12px;
-  font-weight: 18px;
-  /* background-color: var(--basic-white); */
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 73px;
+
   border-bottom: 1px solid var(--basic-light-2);
 }
 
 .sorting__found {
+  margin: 0;
+  margin-right: 40px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.sorting__label {
+.sorting__type {
+  display: flex;
+  align-items: start;
+}
+
+.sorting__title {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting__button {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
   color: var(--basic-black-03);
+  text-decoration: dotted;
+
+  background-color: var(--basic-white);
   border-bottom: 1px dotted var(--basic-accent);
+}
+
+.sorting__button--active {
+  color: var(--basic-accent);
+}
+
+.sorting__button:hover,
+.sorting__button:focus {
+  color: var(--basic-accent);
+  background-color: var(--basic-white);
+}
+
+.sorting__button:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .sorting__input:checked ~ .sorting__label {
   color: var(--basic-accent);
   border-bottom: none;
+}
+
+.sorting__order {
+  margin-left: auto;
 }
 
 /* Hotels list */
