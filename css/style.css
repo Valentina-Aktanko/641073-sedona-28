@@ -222,16 +222,33 @@ img {
 }
 
 .features__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .features__item {
+  display: flex;
   color: var(--basic-extra-dark);
   text-align: center;
   background-color: var(--basic-neutral);
 }
 
+.features__item:first-child {
+  order: -2;
+}
+
+.features__item--additionally {
+  order: -1;
+}
+
 .feature__text-content {
+  width: 400px;
+}
+
+.features__item--accent .feature__text-content {
   color: var(--basic-white);
   background-color: var(--basic-accent);
 }
@@ -243,8 +260,14 @@ img {
   color: var(--basic-black);
 }
 
-.featires__title--accent {
+.features__item--accent .featires__title {
   color: var(--basic-white);
+}
+
+.features__picture {
+  margin: 0;
+  width: 800px;
+  height: 256px;
 }
 
 /* Search */
