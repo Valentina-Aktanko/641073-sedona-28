@@ -571,6 +571,14 @@ img {
   justify-content: space-between;
 }
 
+.rating__stars {
+  margin: 0;
+}
+
+.rating-text {
+  margin: 0;
+}
+
 /* Footer social */
 
 .social__list {
