@@ -69,15 +69,15 @@ img {
   text-transform: uppercase;
 
   background-color: var(--basic-extra-light);
-
 }
 
 /* Container */
 
 .container {
-  width: 1200px;
+  width: 1054px;
   margin: 0 auto;
-  background-color: var(--basic-white);
+  padding: 0 73px;
+
   box-shadow: 0px 4px 4px var(--basic-black-025);
 }
 
@@ -86,11 +86,12 @@ img {
 .button {
   font: inherit;
   font-weight: 700;
-  text-align: center;
-  color: var(--basic-white);
-  background-color: var(--basic-accent);
-  vertical-align: middle;
   text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--basic-white);
+
+  background-color: var(--basic-accent);
   border: none;
   cursor: pointer;
 }
@@ -124,52 +125,83 @@ img {
 /* Page header */
 
 .page-header {
-  padding: 15px 72px;
+  background-color: var(--basic-white);
+}
+
+.page-header .container {
+  position: relative;
 }
 
 .page-header__logo {
   position: absolute;
   top: 0;
-  left: calc(50% - 69px);
+  left: 531px;
+  width: 138px;
+  height: 70px;
+}
+
+.page-header__logo-image {
+  width: 138px;
+  height: 70px;
 }
 
 /* Main navigation */
 
 .main-navigation {
+
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-black);
 }
 
-.menu-list {
+.main-menu {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.menu-list__item:nth-child(2) {
+.main-menu__item {
+  width: 154px;
+}
+
+.main-menu__item:nth-child(4n + 1),   /* 1, 5, 9, 13, ... */
+.main-menu__item:nth-child(4n + 2) {  /* 2, 6, 10, 14, ... */
+  margin-right: 73px;
+}
+
+.main-menu__item:nth-child(4n + 2) {
   margin-right: auto;
 }
 
-.menu-list__item:nth-child(3) {
+.main-menu__item:nth-child(4n + 3),   /* 3, 7, 11, 15, ... */
+.main-menu__item:nth-child(4n + 4) {  /* 4, 8, 12, 16, ... */
+  margin-left: 73px;
+  text-align: right;
+}
+
+.main-menu__item:nth-child(4n + 3) {
   margin-left: auto;
 }
 
-.menu-list__item a {
+.main-menu__link {
+  display: inline-block;
+  padding: 15px 0;
+  vertical-align: middle;
   color: var(--basic-black);
 }
 
-.menu-list__item a:hover,
-.menu-list__item a:focus {
+.main-menu__link:hover,
+.main-menu__link:focus {
   color: var(--basic-accent);
 }
 
-.menu-list__item a:active {
+.main-menu__link:active {
   color: var(--basic-black-03);
 }
 
-.menu-list__item--current a:not([href]) {
+.main-menu__item--current .main-menu__link:not([href]) {
   color: var(--special);
 }
 
