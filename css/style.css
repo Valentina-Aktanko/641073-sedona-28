@@ -74,11 +74,11 @@ img {
 /* Container */
 
 .container {
-  width: 1054px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 73px;
 
-  box-shadow: 0px 4px 4px var(--basic-black-025);
+  background-color: var(--basic-white);
+  box-shadow: 0 4px 40px var(--basic-black-025);
 }
 
 /* Button */
@@ -125,11 +125,8 @@ img {
 /* Page header */
 
 .page-header {
-  background-color: var(--basic-white);
-}
-
-.page-header .container {
   position: relative;
+  padding: 0 73px;
 }
 
 .page-header__logo {
@@ -148,7 +145,6 @@ img {
 /* Main navigation */
 
 .main-navigation {
-
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-black);
@@ -163,7 +159,7 @@ img {
 }
 
 .main-menu__item {
-  width: 154px;
+  width: 190px;
 }
 
 .main-menu__item:nth-child(4n + 1),   /* 1, 5, 9, 13, ... */
@@ -212,12 +208,15 @@ img {
   justify-content: center;
   align-items: center;
   min-height: 509px;
+  padding: 0 73px;
 
   text-align: center;
-  background-color: var(--basic-extra-dark);
-  background-image: url(../img/bg-mountains.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
+
+  background-color: var(--basic-accent-dark);
+  background-image: url(../img/welcome-text.svg), url(../img/welcome-mask.svg), url(../img/bg-mountains.jpg);
+  background-position: center center, bottom center, top center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: initial, cover, cover;
 }
 
 .welcome__picture {
@@ -228,23 +227,34 @@ img {
 
 /* Features */
 
-.feature__text-wrapper {
-  max-width: 500px;
-  margin: 0 auto;
-  padding-top: 42px;
-  padding-bottom: 51px;
-
-  line-height: 26px;
+.features {
+  line-height: 21px;
+  color: var(--basic-extra-dark);
   text-align: center;
 }
 
+.feature__header {
+  padding: 40px 73px;
+
+  line-height: 26px;
+  outline: 1px solid red;
+}
+
 .features__slogan {
+  margin: 0;
+  margin-bottom: 45px;
+
   font-size: 21px;
   font-weight: 700;
+  color: var(--basic-black);
 }
 
 .features__text {
-  color: var(--basic-extra-dark);
+  margin: 0;
+}
+
+.feature__header .features__text  {
+  margin-bottom: 15px;
 }
 
 .features__text--accent {
