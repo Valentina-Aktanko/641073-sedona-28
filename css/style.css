@@ -272,8 +272,10 @@ input[type="radio"].visually-hidden {
 
 .features__item {
   display: flex;
+  justify-content: center;
+  flex-grow: 1;
+
   color: var(--basic-extra-dark);
-  text-align: center;
   background-color: var(--basic-neutral);
 }
 
@@ -285,16 +287,69 @@ input[type="radio"].visually-hidden {
   order: -1;
 }
 
-.feature__text-content {
+
+.features__text-content {
+  display: flex;
+  flex-direction: column;
+
   width: 400px;
+  min-height: 256px;
+  padding: 47px 50px;
+  box-sizing: border-box;
 }
 
-.features__item--accent .feature__text-content {
+.features__item--accent .features__text-content {
   color: var(--basic-white);
   background-color: var(--basic-accent);
 }
 
+.features__item--additionally .features__text-content {
+  position: relative;
+  min-height: 330px;
+  padding-top: 160px;
+  background-color: var(--basic-white);
+}
+
+.features__item--additionally .features__text-content::before {
+  content: '';
+  position: absolute;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.features__item--hotel .features__text-content::before {
+  top: 60px;
+  left: 162px;
+  width: 75px;
+  height: 72px;
+  background-image: url(../img/house.svg);
+}
+
+.features__item--food .features__text-content::before {
+  top: 61px;
+  left: 162px;
+  width: 75px;
+  height: 72px;
+  background-image: url(../img/food.svg);
+}
+
+.features__item--souvenirs .features__text-content::before {
+  top: 55px;
+  left: 168px;
+  width: 64px;
+  height: 77px;
+  background-image: url(../img/souvenirs.svg);
+}
+
+.features__number {
+  margin-bottom: 23px;
+}
+
 .featires__title {
+  order: -1;
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -307,6 +362,10 @@ input[type="radio"].visually-hidden {
 
 .features__picture {
   margin: 0;
+  line-height: 0;
+}
+
+.features__image {
   width: 800px;
   height: 256px;
 }
