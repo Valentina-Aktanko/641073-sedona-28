@@ -80,7 +80,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 
   background-color: var(--basic-white);
-  box-shadow: 0 4px 40px var(--basic-black-025);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 /* Button */
@@ -196,7 +196,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-menu__link:active {
-  color: var(--basic-black-03);
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 
 .main-menu__item--current .main-menu__link:not([href]) {
@@ -653,7 +654,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0 73px;
   list-style: none;
-  /* background-color: var(--basic-white); */
 }
 
 .hotels__item {
@@ -664,43 +664,79 @@ input[type="radio"].visually-hidden {
 .hotels__picture {
   margin: 0;
   margin-right: 30px;
+}
+
+.hotels__image {
   width: 135px;
   height: 90px;
 }
 
 .hotels__content {
-  flex-grow: 1;
-  margin-right: 30px;
+  display: grid;
+  grid-template-columns: 110px 142px auto;
+  column-gap: 6px;
+  row-gap: 7px;
+  color: var(--basic-extra-dark);
 }
 
-.hotels__link {
+.hotels__title {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-black);
 }
 
-.hotels__link:hover,
-.hotels__link:focus {
+.hotels__title:hover,
+.hotels__title:focus {
   color: var(--basic-accent);
 }
 
-.hotels__link:active {
-  color: var(--basic-black-03);
+.hotels__title:active {
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 
-.hotels__title {
+.hotels__link {
+  grid-column: 1 / -1;
+}
+
+.hotels__type {
+  grid-column: 1 / 2;
   margin: 0;
 }
 
-.hotels__text {
-  color: var(--basic-extra-dark);
+.hotels__price {
+  grid-column: 2 / 3;
+  margin: 0;
 }
 
+.hotels__button-details {
+  grid-column: 1 / 2;
+}
+
+.hotels__button-booking {
+  grid-column: 2 / 3;
+}
+
+.hotels__button {
+  display: block;
+  width: 100%;
+  height: 27px;
+  padding: 3px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
 .hotels__rating {
+  width: 127px;
+  margin-left: auto;
+}
+
+.rating {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .rating__stars {
@@ -709,6 +745,10 @@ input[type="radio"].visually-hidden {
 
 .rating-text {
   margin: 0;
+  padding: 3px 15px;
+  padding-right: 12px;
+  color: var(--basic-gray);
+  background-color: var(--basic-extra-light);
 }
 
 /* Footer */
