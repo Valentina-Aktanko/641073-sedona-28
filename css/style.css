@@ -669,10 +669,12 @@ input[type="radio"].visually-hidden {
 /* Filter double range */
 
 .double-range {
+  width: 327px;
   margin-left: auto;
 }
 
 .double-range__legend {
+  margin-left: 10px;
   margin-bottom: 11px;
 }
 
@@ -680,6 +682,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 317px;
   height: 36px;
+  margin-left: 10px;
   box-sizing: border-box;
   border: 2px solid var(--basic-white);
 }
@@ -719,6 +722,7 @@ input[type="radio"].visually-hidden {
 
 .double-range__range-controls {
   position: relative;
+  margin-left: 10px;
   margin-bottom: 12px;
   padding: 20px 0;
   padding-left: 4px;
@@ -768,6 +772,9 @@ input[type="radio"].visually-hidden {
 /* Filter button */
 
 .filter-form__button {
+  display: block;
+  margin: 0 auto;
+
   font-weight: 400;
   background-color: transparent;
   border: 2px solid var(--basic-white);
