@@ -42,16 +42,16 @@
         <fieldset class="filter-form__fieldset">
           <legend class="filter-form__legend">Инфраструктура:</legend>
           <ul class="filter-form__list">
-            <li>
-              <input class="filter-form__input" type="checkbox" name="pool" id="filter-form-pool" checked>
+            <li class="filter-form__option filter-form__checkbox">
+              <input class="visually-hidden filter-form__input filter-form__input--checkbox" type="checkbox" name="pool" id="filter-form-pool" checked>
               <label for="filter-form-pool">Бассейн</label>
             </li>
-            <li>
-              <input class="filter-form__input" type="checkbox" name="parking" id="filter-form-parking">
+            <li class="filter-form__option filter-form__checkbox">
+              <input class="visually-hidden filter-form__input filter-form__input--checkbox" type="checkbox" name="parking" id="filter-form-parking">
               <label for="filter-form-parking">Парковка</label>
             </li>
-            <li>
-              <input class="filter-form__input" type="checkbox" name="internet" id="filter-form-internet">
+            <li class="filter-form__option filter-form__checkbox">
+              <input class="visually-hidden filter-form__input filter-form__input--checkbox" type="checkbox" name="internet" id="filter-form-internet">
               <label for="filter-form-internet">Wi-Fi</label>
             </li>
           </ul>
@@ -59,40 +59,46 @@
         <fieldset  class="filter-form__fieldset">
           <legend class="filter-form__legend">Тип жилья:</legend>
           <ul class="filter-form__list">
-            <li>
-              <input class="filter-form__input" type="checkbox" name="hotel" id="filter-form-hotel" checked>
+            <li class="filter-form__option filter-form__checkbox">
+              <input class="visually-hidden filter-form__input filter-form__input--checkbox" type="checkbox" name="hotel" id="filter-form-hotel" checked>
               <label for="filter-form-hotel">Гостиница</label>
             </li>
-            <li>
-              <input class="filter-form__input" type="checkbox" name="motel" id="filter-form-motel" checked>
+            <li class="filter-form__option filter-form__checkbox">
+              <input class="visually-hidden filter-form__input filter-form__input--checkbox" type="checkbox" name="motel" id="filter-form-motel" checked>
               <label for="filter-form-motel">Мотель</label>
             </li>
-            <li>
-              <input class="filter-form__input" type="checkbox" name="apartments" id="filter-form-apartments" checked>
+            <li class="filter-form__option filter-form__checkbox">
+              <input class="visually-hidden filter-form__input filter-form__input--checkbox" type="checkbox" name="apartments" id="filter-form-apartments" checked>
               <label for="filter-form-apartments">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="double-range">
-          <legend class="filter-form__legend">Стоимость в сутки (Р):</legend>
+
+        <fieldset class="filter-form__fieldset double-range">
+
+          <legend class="filter-form__legend double-range__legend">Стоимость в сутки (Р):</legend>
+
           <div class="double-range__price-controls">
-            <label class="visually-hidden" for="double-range-min-price">Минимальная цена</label>
-            <div class="double-range__input-wrapper double-range__input-wrapper_min">
-              <input class="double-range__input double-range__input-left" type="text" name="min-price" value=" от 0" id="double-range-min-price"
-                readonly>
+            <div class="double-range__control double-range__control--min">
+              <label class="double-range__label double-range__label--min">
+                от
+                <input class="double-range__input double-range__input-min" type="number" name="min-price" value="0">
+              </label>
             </div>
-            <label class="visually-hidden" for="double-range-max-price">Максимальная цена</label>
-            <div class="double-range__input-wrapper">
-              <input class="double-range__input double-range__input-right" type="text" name="max-price" value="до 3000" id="double-range-max-price"
-                readonly>
+            <div class="double-range__control double-range__control--max">
+              <label class="double-range__label double-range__label--max">
+                до
+                <input class="double-range__input double-range__input-max" type="number" name="max-price" value="3000">
+              </label>
             </div>
           </div>
-          <div class="double-range__controls">
+
+          <div class="double-range__range-controls">
             <div class="double-range__scale">
-              <div class="double-range__bar"></div>
+              <div class="double-range__bar" style="width: 70%; margin-left: 4.5%"></div>
             </div>
-            <div class="double-range__toggle double-range__toggle_min"></div>
-            <div class="double-range__toggle double-range__toggle_max"></div>
+            <div class="double-range__toggle double-range__toggle--min" tabindex="0" style="left: 3.5%"></div>
+            <div class="double-range__toggle double-range__toggle--max" tabindex="0" style="left: 75%"></div>
           </div>
           <button class="button filter-form__button" type="submit">Показать</button>
         </fieldset>
