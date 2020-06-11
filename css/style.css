@@ -1014,6 +1014,10 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-white-09);
 }
 
+.page-footer--offset {
+  margin-top: -120px;
+}
+
 /* Footer contacts */
 
 .page-footer__contacts {
