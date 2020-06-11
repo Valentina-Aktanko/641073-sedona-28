@@ -790,34 +790,39 @@ input[type="radio"].visually-hidden {
 
 .sorting {
   display: flex;
-  justify-content: flex-start;
-  padding: 0 73px;
+  padding: 29px 73px;
+  padding-bottom: 31px;
 
   border-bottom: 1px solid var(--basic-light-2);
 }
 
 .sorting__found {
+  width: 135px;
   margin: 0;
-  margin-right: 40px;
+  margin-right: 30px;
 
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.sorting__type {
+.sorting__by-type {
   display: flex;
   align-items: start;
+  margin-top: 2px;
 }
 
 .sorting__title {
   margin: 0;
-
+  margin-right: 40px;
   font-size: 12px;
   line-height: 18px;
 }
 
 .sorting__button {
+  margin-right: 32px;
+  padding: 0;
+
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -828,8 +833,8 @@ input[type="radio"].visually-hidden {
   border-bottom: 1px dotted var(--basic-accent);
 }
 
-.sorting__button--active {
-  color: var(--basic-accent);
+.sorting__button:last-of-type {
+  margin-right: 0;
 }
 
 .sorting__button:hover,
@@ -839,18 +844,58 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting__button:active {
-  border: none;
-  outline: none;
-  box-shadow: none;
+  border-bottom: none;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
-.sorting__input:checked ~ .sorting__label {
+.sorting__button--current,
+.sorting__button--current:hover,
+.sorting__button--current:focus,
+.sorting__button--current:active {
   color: var(--basic-accent);
   border-bottom: none;
+  cursor: default;
 }
 
-.sorting__order {
+.sorting__by-order {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 7px;
   margin-left: auto;
+}
+
+.sorting__order-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
+  width: 19px;
+  height: 18px;
+  margin-right: 4px;
+  padding: 0;
+  background-color: var(--basic-white);
+  border: none;
+}
+
+.sorting__order-button:last-child {
+  margin-right: 0;
+}
+
+.sorting__order-button:hover path,
+.sorting__order-button:focus path {
+  fill: var(--basic-black);
+}
+
+.sorting__order-button:active path {
+  fill: var(--basic-accent);
+}
+
+.sorting__order-button--current path,
+.sorting__order-button--current:hover path,
+.sorting__order-button--current:focus path,
+.sorting__order-button--current:active path {
+  fill: var(--basic-accent);
 }
 
 /* Hotels list */

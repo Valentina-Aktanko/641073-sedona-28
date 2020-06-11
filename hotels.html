@@ -106,27 +106,27 @@
 
       <div class="sorting">
         <h2 class="visually-hidden">Сортировка отелей</h2>
-        <p class="sorting__found">Найдено: <span id="sorting-found-quantity">3</span></p>
-        <div class="sorting__type">
+        <p class="sorting__found">Найдено: <span id="sorting-found-count">3</span></p>
+        <div class="sorting__by-type">
           <h3 class="sorting__title">Сортировка:</h3>
-          <!-- <p class="sorting__item"> -->
-            <button class="button sorting__button sorting__button--active" type="button">По цене</button>
-          <!-- </p> -->
-          <!-- <p class="sorting__item"> -->
+            <button class="button sorting__button sorting__button--current" type="button">По цене</button>
             <button class="button sorting__button" type="button">По типу</button>
-          <!-- </p> -->
-          <!-- <p class="sorting__item"> -->
             <button class="button sorting__button" type="button">По рейтингу</button>
-          <!-- </p> -->
         </div>
-        <p class="sorting__order order">
-          <button class="order__button order__button--asc">
+        <div class="sorting__by-order">
+          <button class="sorting__order-button" id="sortingAsc">
             <span class="visually-hidden">По возрастанию</span>
+            <svg class="sorting__icon" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#CACACA" d="M5.5 0L0 10h11L5.5 0z"/>
+            </svg>
           </button>
-          <button class="order__button order__button--desc order__button--active">
+          <button class="sorting__order-button sorting__order-button--current" id="sortingDesc">
             <span class="visually-hidden">По убыванию</span>
+            <svg class="sorting__icon" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#CACACA" d="M5.5 10L11 0H0l5.5 10z"/>
+            </svg>
           </button>
-        </p>
+        </div>
       </div>
 
       <ul class="hotels__list">
