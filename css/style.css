@@ -305,7 +305,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features__item--additionally .features__text-content::before {
-  content: '';
+  content: "";
   position: absolute;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -460,7 +460,7 @@ input[type="radio"].visually-hidden {
   border: 2px solid var(--basic-extra-light);
 }
 
-.search-form__input[type='number'] {
+.search-form__input[type="number"] {
   width: 34px;
   padding: 6px;
   text-align: center;
@@ -510,7 +510,7 @@ input[type="radio"].visually-hidden {
 .search-form__control::before,
 .search-form__control::after {
   position: absolute;
-  content: '';
+  content: "";
   background-color: #A9A9A9;
 }
 
@@ -564,9 +564,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   object-fit: contain;
   background-color: var(--basic-accent);
-}
-
-.map__image {
 }
 
 /* Hotels */
@@ -687,7 +684,7 @@ input[type="radio"].visually-hidden {
 }
 
 .double-range__price-controls::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 5px;
   left: 159px;
