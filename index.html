@@ -80,11 +80,7 @@
           <div class="features__text-content">
             <span class="features__number">— №4 —</span>
             <h3 class="featires__title">красивая<br> дорога</h3>
-<<<<<<< HEAD
             <p class="features__text">ехать в седону из лас-вегаса совсем не&nbsp;скучно!</p>
-=======
-            <p class="features__text">ехать в седону из лас-вегаса совсем не скучно!</p>
->>>>>>> 71b2928f197e17ac6e8bb5c3c85416b976f9275e
           </div>
         </li>
         <li class="features__item">
@@ -119,16 +115,18 @@
       </ul>
     </section>
     <section class="search">
-      <h2 class="visually-hidden">Подобор отеля в Седоне</h2>
-      <p class="search__slogan">Заинтересовались?</p>
-      <p class="search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
-        Cедоне</p>
-      <button class="button button--dark search__button" type="button" id="show-button">Поиск
-        гостиницы в седоне</button>
+      <div class="search-content">
+        <h2 class="visually-hidden">Подобор отеля в Седоне</h2>
+        <p class="search__slogan">Заинтересовались?</p>
+        <p class="search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
+          Cедоне</p>
+        <button class="button button--dark search__button" type="button" id="show-form-button">Поиск
+          гостиницы в седоне</button>
+      </div>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="search-form__item">
-          <label class="search-form__label" for="search-form-arrival-date">Дата заезда:</label>
-          <input class="search-form__input" id="search-form-arrival-date" type="text" name="arrival-date"
+          <label class="search-form__label" for="arrival-date">Дата заезда:</label>
+          <input class="search-form__input" id="arrival-date" type="text" name="arrival-date"
             value="24 апреля 2017">
           <svg class="search-form__icon" width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill="#A9A9A9" fill-rule="evenodd" clip-rule="evenodd"
@@ -138,8 +136,8 @@
           </svg>
         </p>
         <p class="search-form__item">
-          <label class="search-form__label" for="search-form-departure-date">Дата выезда:</label>
-          <input class="search-form__input" id="search-form-departure-date" type="text" name="departure-date"
+          <label class="search-form__label" for="departure-date">Дата выезда:</label>
+          <input class="search-form__input" id="departure-date" type="text" name="departure-date"
             value="4 июля 2017">
           <svg class="search-form__icon" width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill="#A9A9A9" fill-rule="evenodd" clip-rule="evenodd"
@@ -149,23 +147,23 @@
           </svg>
         </p>
         <div class="search-form__item">
-          <label class="search-form__label" for="search-form-adults">Взрослые:</label>
+          <label class="search-form__label" for="number-of-adults">Взрослые:</label>
           <div class="search-form__column">
             <div class="search-form__cell">
               <button class="search-form__control search-form__control--minus" type="button">
                 <span class="visually-hidden">-1</span>
               </button>
-              <input class="search-form__input" id="search-form-adults" type="number" name="adults" value="2">
+              <input class="search-form__input" id="number-of-adults" type="number" name="adults" value="2">
               <button class="search-form__control search-form__control--plus" type="button">
                 <span class="visually-hidden">+1</span>
               </button>
             </div>
             <div class="search-form__cell">
-              <label class="search-form__label search-form__label-margin-r" for="search-form-children">Дети:</label>
+              <label class="search-form__label search-form__label-margin-r" for="number-of-children">Дети:</label>
               <button class="search-form__control search-form__control--minus" type="button">
                 <span class="visually-hidden">-1</span>
               </button>
-              <input class="search-form__input" id="search-form-children" type="number" name="children" value="0">
+              <input class="search-form__input" id="number-of-children" type="number" name="children" value="0">
               <button class="search-form__control search-form__control--plus" type="button">
                 <span class="visually-hidden">+1</span>
               </button>
@@ -177,6 +175,7 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Как нас найти:</h2>
+      <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497814.364155747!2d-111.4385707487043!3d34.946755353933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1592511974598!5m2!1sru!2sru" width="1199" height="593" allowfullscreen></iframe>
       <p class="map__picture">
         <img src="img/map.png" width="1199" height="593"
           alt="Адрес: Коконино-Каунти, штат Аризона, Соединённые Штаты Америки">
@@ -229,6 +228,7 @@
     </div>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>

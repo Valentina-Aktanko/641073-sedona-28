@@ -223,6 +223,9 @@ input[type="radio"].visually-hidden {
 /* Features */
 
 .features {
+  position: relative;
+  z-index: 3;
+
   line-height: 21px;
   color: var(--basic-extra-dark);
   text-align: center;
@@ -366,9 +369,14 @@ input[type="radio"].visually-hidden {
 
 .search {
   position: relative;
+  z-index: 2;
+}
+
+.search-content {
+  position: relative;
+  z-index: 1;
   padding: 61px 73px;
   padding-bottom: 0;
-
   line-height: 24px;
   text-align: center;
   background-color: var(--basic-white);
@@ -409,10 +417,21 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   align-items: stretch;
 
-  width: 458px;
+  width: 568px;
+  min-height: 395px;
   padding: 55px;
-
+  box-sizing: border-box;
   background-color: var(--basic-white);
+
+  transition: all 1s ease-in-out;
+}
+
+.search-form--hide {
+  transform: translate(0, -395px);
+}
+
+.search-form--error {
+  animation: shake 0.6s;
 }
 
 .search-form__item {
@@ -558,7 +577,21 @@ input[type="radio"].visually-hidden {
 
 /* Map */
 
+.map {
+  position: relative;
+}
+
+.map__iframe {
+  width: 1199px;
+  height: 593px;
+  border: none;
+}
+
 .map__picture {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
   width: 1199px;
   height: 593px;
   margin: 0;
@@ -1001,6 +1034,9 @@ input[type="radio"].visually-hidden {
 /* Footer */
 
 .page-footer  {
+  position: relative;
+  z-index: 1;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 36px;
@@ -1087,4 +1123,28 @@ input[type="radio"].visually-hidden {
 
 .copyright__logo-link:active path {
   fill: var(--basic-extra-light-gray);
+}
+
+/* Animations */
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
