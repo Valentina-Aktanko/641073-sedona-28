@@ -378,7 +378,7 @@ input[type="radio"].visually-hidden {
 .search-content {
   position: relative;
   z-index: 1;
-  padding: 61px 73px;
+  padding: 55px 73px;
   padding-bottom: 0;
   line-height: 24px;
   text-align: center;
