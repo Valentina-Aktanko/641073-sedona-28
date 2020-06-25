@@ -6,9 +6,12 @@
   --basic-black-025: rgba(0, 0, 0, 0.25);
   --basic-extra-dark: #333333;
   --basic-dark-grey: #6A6A6A;
+  --basic-dark-grey-02: rgba(0, 1, 1, 0.2)
   --basic-gray: #8d8c8c;
   --basic-light-gray: #ababab;
+  --basic-light-gray-2: #A9A9A9;
   --basic-extra-light-gray: #BDBBBC;
+
   --basic-accent-dark: #5496BD;
   --basic-accent-middle: #669EC0;
   --basic-accent: #81B3D2;
@@ -80,7 +83,7 @@ input[type="radio"].visually-hidden {
 .container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 5px 15px var(--basic-dark-grey-02);
 }
 
 /* Button */
@@ -530,7 +533,7 @@ input[type="radio"].visually-hidden {
 .search-form__control::after {
   position: absolute;
   content: "";
-  background-color: #A9A9A9;
+  background-color: var(--basic-light-gray-2);
 }
 
 .search-form__control:hover::before,
