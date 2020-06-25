@@ -268,15 +268,16 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color:  var(--basic-neutral);
+}
+
+.features__item--additionally .features__list {
+  background-color: var(--basic-white);
 }
 
 .features__item {
   display: flex;
-  justify-content: center;
-  flex-grow: 1;
-
   color: var(--basic-extra-dark);
-  background-color: var(--basic-neutral);
 }
 
 .features__item:first-child {
@@ -286,7 +287,6 @@ input[type="radio"].visually-hidden {
 .features__item--additionally {
   order: -1;
 }
-
 
 .features__text-content {
   display: flex;
