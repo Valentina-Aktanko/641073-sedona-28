@@ -61,9 +61,7 @@ input[type="radio"].visually-hidden {
 
 .page-body {
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-
+  grid-template-rows: 1fr;
   min-height: 100%;
   margin: 0;
   padding: 0;
@@ -80,9 +78,19 @@ input[type="radio"].visually-hidden {
 
 /* Container */
 
+.page-wrapper {
+  margin: 0 40px;
+}
+
 .container {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
   width: 1200px;
+  min-height: 100%;
   margin: 0 auto;
+  background-color: var(--basic-white);
   box-shadow: 0px 5px 15px var(--basic-dark-grey-02);
 }
 
@@ -133,7 +141,6 @@ input[type="radio"].visually-hidden {
 .page-header {
   position: relative;
   padding: 0 73px;
-  background-color: var(--basic-white);
 }
 
 .page-header__logo {
@@ -232,7 +239,6 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   color: var(--basic-extra-dark);
   text-align: center;
-  background-color: var(--basic-white);
 }
 
 .feature__header {
@@ -286,6 +292,7 @@ input[type="radio"].visually-hidden {
 
 .features__item--additionally {
   order: -1;
+  background-color: var(--basic-white);
 }
 
 .features__text-content {
@@ -395,11 +402,8 @@ input[type="radio"].visually-hidden {
 
 .search__text {
   margin: 0;
+  margin-bottom: 47px;
   color: var(--basic-extra-dark);
-}
-
-.search__text {
-  margin-bottom: 40px;
 }
 
 .search__button {
@@ -424,9 +428,8 @@ input[type="radio"].visually-hidden {
   min-height: 395px;
   padding: 55px;
   box-sizing: border-box;
-  background-color: var(--basic-white);
-
   transition: all 1s ease-in-out;
+  background-color: var(--basic-white);
 }
 
 .search-form--hide {
@@ -602,13 +605,7 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-accent);
 }
 
-/* Hotels */
-
-.hotels {
-  background-color: var(--basic-white);
-}
-
-/* Filter */
+/* Hotels Filter */
 
 .filter-form {
   display: flex;
@@ -909,8 +906,8 @@ input[type="radio"].visually-hidden {
   height: 18px;
   margin-right: 4px;
   padding: 0;
-  background-color: var(--basic-white);
   border: none;
+  background-color: var(--basic-white);
 }
 
 .sorting__order-button:last-child {
@@ -1050,7 +1047,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page-footer--offset {
-  margin-top: -120px;
+  margin-top: -125px;
 }
 
 /* Footer contacts */
@@ -1060,8 +1057,8 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 23px;
-  padding-bottom: 36px;
+  padding-top: 22px;
+  padding-bottom: 42px;
 }
 
 .page-footer__text {
